@@ -2,8 +2,8 @@
 
 ## Student Details
 
-- **Name:** Your Name
-- **Registration Number:** Your Roll Number
+- **Name:** Armaan Mulani
+- **Registration Number:** 24BCE10434
 - **Course:** Open Source Software
 - **Chosen Software:** Git
 
