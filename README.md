@@ -1,65 +1,225 @@
-# Open Source Audit — Git
-
-## Student Details
-
-- **Name:** Armaan Mulani
-- **Registration Number:** 24BCE10434
-- **Course:** Open Source Software
-- **Chosen Software:** Git
-
----
+# OSS Audit Project — Git
 
 ## Project Overview
 
-This project is an audit of **Git**, an open-source distributed version control system created by Linus Torvalds.  
-It explores Git’s origin, license, philosophy, Linux footprint, ecosystem, and comparison with proprietary alternatives.
+This project is a Linux-based **Open Source Software Audit** focused on **Git**, a distributed version control system widely used in software development.
 
-The repository also includes **five shell scripts** demonstrating practical Linux and shell scripting skills.
+The objective of this project is to understand Git from both:
 
----
+* a **technical perspective** (installation, Linux footprint, usage)
+* a **philosophical perspective** (open-source values, licensing, ecosystem)
 
-## Repository Contents
-
-- `script1_system_identity.sh` — Displays Linux system identity information
-- `script2_package_inspector.sh` — Checks whether Git is installed and shows package details
-- `script3_disk_permission_auditor.sh` — Audits important system directories and Git config locations
-- `script4_log_analyzer.sh` — Analyzes a log file for a keyword and shows summary
-- `script5_manifesto_generator.sh` — Generates a personalized open-source manifesto
-- `README.md` — Project documentation
+The project also includes practical **shell scripting tasks** to demonstrate Linux command-line skills and automation.
 
 ---
 
-## Software Chosen
+## Chosen Software
 
-**Git**
+* **Software Name:** Git
+* **Category:** Version Control System
+* **License:** GNU General Public License v2 (GPL v2)
 
-### Why Git?
+Git was selected because it is one of the most important tools in modern software development and a strong example of successful open-source software.
 
-Git is one of the most important open-source tools in software development. It enables distributed collaboration, version tracking, and open participation in projects worldwide.
+---
+
+## Project Structure
+
+```
+oss-audit/
+├── script1_system_identity.sh
+├── script2_package_inspector.sh
+├── script3_disk_permission_auditor.sh
+├── script4_log_analyzer.sh
+├── script5_manifesto_generator.sh
+├── screenshots/
+├── sample.log
+├── manifesto_armaan.txt
+└── README.md
+```
 
 ---
 
 ## Requirements
 
-This project should be run on a **Linux system** such as:
+This project should be run on a Linux-based system such as:
 
-- Ubuntu
-- Debian
-- Fedora
-- WSL (if allowed)
+* Ubuntu
+* Debian
+* Fedora
+* WSL (Windows Subsystem for Linux)
 
-### Required dependencies
+### Dependencies
 
-- Bash shell
-- Git
-- Standard Linux commands: `uname`, `whoami`, `uptime`, `grep`, `awk`, `cut`, `du`, `ls`, `tail`
+* Bash shell
+* Git
+* Standard Linux commands:
+
+  * `uname`
+  * `whoami`
+  * `uptime`
+  * `grep`
+  * `awk`
+  * `cut`
+  * `du`
+  * `ls`
+  * `tail`
 
 ---
 
 ## How to Run the Scripts
 
-### 1) Make scripts executable
+### Step 1 — Make scripts executable
 
-```bash
+```
 chmod +x *.sh
 ```
+
+---
+
+### Step 2 — Execute scripts
+
+#### Script 1 — System Identity Report
+
+```
+./script1_system_identity.sh
+```
+
+#### Script 2 — Package Inspector
+
+```
+./script2_package_inspector.sh
+```
+
+#### Script 3 — Disk Permission Auditor
+
+```
+./script3_disk_permission_auditor.sh
+```
+
+#### Script 4 — Log Analyzer
+
+Create sample log file:
+
+```
+echo -e "error: failed login\nwarning: low disk\nerror: git fetch failed\ninfo: done" > sample.log
+```
+
+Run:
+
+```
+./script4_log_analyzer.sh sample.log error
+```
+
+#### Script 5 — Manifesto Generator
+
+```
+./script5_manifesto_generator.sh
+```
+
+---
+
+## Script Descriptions
+
+### 1. script1_system_identity.sh
+
+Displays system-level information:
+
+* Linux distribution
+* Kernel version
+* Current user
+* Home directory
+* System uptime
+* Date and time
+
+---
+
+### 2. script2_package_inspector.sh
+
+Checks whether Git is installed and displays:
+
+* Package status
+* Version
+* Description
+* Basic open-source philosophy note
+
+---
+
+### 3. script3_disk_permission_auditor.sh
+
+Analyzes Linux directories and Git-related files:
+
+* Directory permissions
+* Owner and group
+* Disk usage
+* Presence of Git configuration files
+
+---
+
+### 4. script4_log_analyzer.sh
+
+Performs log analysis:
+
+* Reads log file input
+* Searches for keyword (default: error)
+* Counts occurrences
+* Displays recent matching entries
+
+---
+
+### 5. script5_manifesto_generator.sh
+
+Interactive script that:
+
+* Takes user input
+* Generates an open-source philosophy statement
+* Saves output to a text file
+
+---
+
+## Screenshots
+
+All execution screenshots are available in the:
+
+```
+screenshots/
+```
+
+These include:
+
+* Script outputs
+* Terminal execution proof
+* Working results
+
+---
+
+## Output Files
+
+* `sample.log` → Sample log file used for testing Script 4
+* `manifesto_armaan.txt` → Output generated by Script 5
+
+---
+
+## Key Concepts Demonstrated
+
+* Linux command-line usage
+* Shell scripting (bash)
+* File permissions and system inspection
+* Package management
+* Log file analysis
+* Open-source software understanding
+
+---
+
+## Author
+
+**Name:** Armaan Mulani
+**Course:** Linux / Open Source Software Audit
+**Chosen Software:** Git
+
+---
+
+## Note
+
+This project was developed and tested in a Linux environment (WSL Ubuntu).
+All scripts are designed to run in standard Linux shells with minimal dependencies.
