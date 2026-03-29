@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script 1: System Identity Report
-# Author: [Your Name] | Course: Open Source Software
+# Author: Armaan Mulani | Course: Open Source Software
 # Purpose: Displays important Linux system details for the Open Source Audit project
 
 # -----------------------------
